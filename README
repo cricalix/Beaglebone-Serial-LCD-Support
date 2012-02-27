@@ -1,0 +1,9 @@
+A python library (eventually) that should make python + serial displays much
+easier on the BeagleBone (and perhaps other embedded boards).
+
+This will probably be a rocky ride, and the Python code is going to be
+horrible at first, as Python is not my strongest coding language (nor do I
+really grok OOP).
+
+If this takes off, I guess I'll supply a Phabricator instance to browse the
+code and control diffs.
