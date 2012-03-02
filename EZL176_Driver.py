@@ -40,7 +40,7 @@ class EZL176_Driver(SerialDisplay):
 
     def displayPixels(self):
         # download.tigal.com/ezoled/EZL-176_datasheet_1.1.pdf
-        return [display_pixels_x, display_pixels_y]
+        return [self.display_pixels_x, self.display_pixels_y]
 
     def deviceInfo(self):
         return 'EZL-176, powered by 4D-Labs GOLDELOX'
@@ -60,7 +60,7 @@ class EZL176_Driver(SerialDisplay):
     def doCommand(self, cmd):
         self.display.write(cmd)
         res = self.display.read(1)
-        return res == EZL176_Driver.ACK
+        return res == self.ACK
 
     def CLS(self):
         return self.doCommand('E')
